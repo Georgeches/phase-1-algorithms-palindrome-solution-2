@@ -1,5 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let len = word.length
+  let loopTimes = len - 1 
+
+  if(loopTimes > 0){
+    for(let i = 0; i < loopTimes/2; i++){
+      let a = word[i]
+      let b = word[loopTimes - i]
+
+      if(a == b){
+        return true
+      }
+      else{
+        return false 
+      }
+    }
+  }
+  else{
+    return true
+  }
 }
 
 /* 
